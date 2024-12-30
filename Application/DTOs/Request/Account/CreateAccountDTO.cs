@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Application.DTOs.Request.Account;
 
-public class CreateAccountDTOc : LoginDTO
+public class CreateAccountDTO : LoginDTO
 {
     [Required]
     public String Name { get; set; } = string.Empty;
