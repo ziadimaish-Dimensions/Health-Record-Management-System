@@ -16,3 +16,5 @@
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastr.15EFFBFE.Up2Date
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastructure.genruntimeconfig.cache
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/bin/Debug/net8.0/Application.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/bin/Debug/net8.0/Application.pdb

@@ -148,3 +148,11 @@
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Infrastructure.pdb
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Domain.pdb
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/obj/Debug/net8.0/API.sourcelink.json
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Microsoft.AspNetCore.Authorization.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Microsoft.AspNetCore.Metadata.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Microsoft.JSInterop.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/NetcodeHub.Packages.Extensions.LocalStorage.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Application.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/API/bin/Debug/net8.0/Application.pdb

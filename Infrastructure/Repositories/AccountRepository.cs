@@ -94,8 +94,8 @@ public class AccountRepository
             var admin = new CreateAccountDTO()
             {
                 Name = "Admin",
-                Password = "1q2w3E*9",
-                EmailAddress = "admin@asp.net",
+                Password = "Admin@123",
+                EmailAddress = "admin@asp.com",
                 Role = Constant.Role.Admin
             };
             await CreateAccountAsync(admin);
@@ -137,42 +137,49 @@ public class AccountRepository
     {
         try
         {
+            // Step 1: Find the user
             var user = await FindUserByEmailAsync(model.EmailAddress);
             if (user is null)
+            {
+                Console.WriteLine("User not found.");
                 return new LoginResponse(false, "User not found");
-            SignInResult result;
-            try
-            {
-                result = await signInManager.CheckPasswordSignInAsync(user, model.Password, false);
             }
-            catch
+
+            // Step 2: Validate the password
+            var result = await signInManager.CheckPasswordSignInAsync(user, model.Password, false);
+            if (!result.Succeeded)
             {
+                Console.WriteLine("Invalid credentials.");
                 return new LoginResponse(false, "Invalid credentials");
             }
 
-            if (!result.Succeeded)
-                return new LoginResponse(false, "Invalid credentials");
+            // Step 3: Generate tokens
             string jwtToken = await GenerateToken(user);
             string refreshToken = GenerateRefreshToken();
             if (string.IsNullOrEmpty(jwtToken) || string.IsNullOrEmpty(refreshToken))
-                return new LoginResponse(false,
-                    "Error occured while logging in account, please contact administration");
-            else
             {
-                var saveResult=await SaveRefreshToken(user.Id, refreshToken);
-                if(saveResult.flag)
-                    return new LoginResponse(true, $"{user.Name} successfully logged in", jwtToken, refreshToken);
-                else
-                    return new LoginResponse();
-
+                Console.WriteLine("Failed to generate tokens.");
+                return new LoginResponse(false, "Error occurred while generating tokens");
             }
+
+            // Step 4: Save the refresh token
+            var saveResult = await SaveRefreshToken(user.Id, refreshToken);
+            if (!saveResult.flag)
+            {
+                Console.WriteLine("Failed to save refresh token.");
+                return new LoginResponse(false, "Failed to save refresh token");
+            }
+
+            // Step 5: Return successful login response
+            return new LoginResponse(true, $"{user.Name} successfully logged in", jwtToken, refreshToken);
         }
         catch (Exception ex)
         {
-
+            Console.WriteLine($"Exception occurred: {ex.Message}");
             return new LoginResponse(false, ex.Message);
         }
     }
+
 
     public async Task<LoginResponse> RefreshTokenAsync(RefreshTokenDTO model)
     {
@@ -188,9 +195,22 @@ public class AccountRepository
             return new LoginResponse();
     }
 
-    public Task<GeneralResponse> CreateRoleAsync(CreateRoleDTO model)
+    public async Task<GeneralResponse> CreateRoleAsync(CreateRoleDTO model)
     {
-        throw new NotImplementedException();
+        try
+        {
+            if (await FindRoleByNameAsync(model.Name) == null)
+            {
+                var response = await roleManager.CreateAsync(new IdentityRole(model.Name));
+                var error = CheckResponse(response);
+                if (!string.IsNullOrEmpty(error))
+                    throw new Exception(error);
+                else
+                    return new GeneralResponse(true, $"{model.Name} created");
+            }
+            return new GeneralResponse(false,$"{model.Name} already created");
+        }
+        catch(Exception ex){throw new Exception(ex.Message);}
     }
 
     public async Task<IEnumerable<GetRoleDTO>> GetRolesAsync() =>

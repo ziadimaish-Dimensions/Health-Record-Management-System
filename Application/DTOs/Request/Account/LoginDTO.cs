@@ -12,8 +12,9 @@ public class LoginDTO
     public string EmailAddress { get; set; }= string.Empty;
 
     [Required]
-    [RegularExpression("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?! @$ g^&*-]).{8, 3$",
-        ErrorMessage = "You password must be a mix of Alphanumeric and special characters")]
+    [RegularExpression("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!@$%^&*-]).{8,}$",
+        ErrorMessage = "Your password must be at least 8 characters long and include uppercase letters, lowercase letters, numbers, and special characters.")]
+
     
     public string Password { get; set; }=string.Empty;
 }
