@@ -1,6 +1,8 @@
 using System.Collections.Immutable;
 using System.Text;
+using Application.Contracts;
 using Domain.Entity.Authentication;
+using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -45,6 +47,7 @@ public static class ServiceContainer
                 builder => builder.WithOrigins("https://localhost:7185").AllowAnyMethod().AllowAnyHeader()
                     .AllowCredentials());
     });
+        services.AddScoped<IAccount, AccountRepository>();
     return services;
     }
 }
