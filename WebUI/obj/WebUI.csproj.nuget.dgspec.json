@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[8.0.3, )"
@@ -64,6 +68,22 @@
               "target": "Package",
               "version": "[8.0.3, )",
               "autoReferenced": true
+            },
+            "NetcodeHub.Packages.Components.DataGrid": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NetcodeHub.Packages.Components.Modal": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NetcodeHub.Packages.Components.Toast": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "NetcodeHub.Packages.Components.Validations": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [

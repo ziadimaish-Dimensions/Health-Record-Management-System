@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JPcWtu9W1VA=",
+  "dgSpecHash": "hh6/omkkBrE=",
   "success": true,
   "projectFilePath": "/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/WebUI/WebUI.csproj",
   "expectedPackageFiles": [
+    "/Users/ziadomaish/.nuget/packages/mapster/7.4.0/mapster.7.4.0.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/mapster.core/1.2.1/mapster.core.1.2.1.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.authorization/8.0.3/microsoft.aspnetcore.authorization.8.0.3.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.components/8.0.3/microsoft.aspnetcore.components.8.0.3.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.components.analyzers/8.0.3/microsoft.aspnetcore.components.analyzers.8.0.3.nupkg.sha512",
@@ -30,6 +32,10 @@
     "/Users/ziadomaish/.nuget/packages/microsoft.jsinterop.webassembly/8.0.3/microsoft.jsinterop.webassembly.8.0.3.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.net.illink.tasks/8.0.3/microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.3/microsoft.net.sdk.webassembly.pack.8.0.3.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/netcodehub.packages.components.datagrid/1.0.0/netcodehub.packages.components.datagrid.1.0.0.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/netcodehub.packages.components.modal/1.0.0/netcodehub.packages.components.modal.1.0.0.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/netcodehub.packages.components.toast/1.0.1/netcodehub.packages.components.toast.1.0.1.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/netcodehub.packages.components.validations/1.0.1/netcodehub.packages.components.validations.1.0.1.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
