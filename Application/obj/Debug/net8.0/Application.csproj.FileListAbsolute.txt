@@ -9,3 +9,5 @@
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Application/obj/Debug/net8.0/refint/Application.dll
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Application/obj/Debug/net8.0/Application.pdb
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Application/obj/Debug/net8.0/ref/Application.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Application/obj/Debug/net8.0/Application.sourcelink.json

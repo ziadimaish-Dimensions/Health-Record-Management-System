@@ -9,3 +9,10 @@
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
 /Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/bin/Debug/net8.0/Infrastructure.runtimeconfig.json
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/bin/Debug/net8.0/Domain.dll
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/bin/Debug/net8.0/Domain.pdb
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastr.15EFFBFE.Up2Date
+/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Infrastructure/obj/Debug/net8.0/Infrastructure.genruntimeconfig.cache
