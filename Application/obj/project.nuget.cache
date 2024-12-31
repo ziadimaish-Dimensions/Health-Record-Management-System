@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "BivjD9qf5qs=",
+  "dgSpecHash": "Uoz0WUXUaLQ=",
   "success": true,
   "projectFilePath": "/Users/ziadomaish/Desktop/ASP.NET/HealthRecordManagementProject/Application/Application.csproj",
   "expectedPackageFiles": [
     "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.authorization/8.0.3/microsoft.aspnetcore.authorization.8.0.3.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.components/8.0.2/microsoft.aspnetcore.components.8.0.2.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.components.analyzers/8.0.2/microsoft.aspnetcore.components.analyzers.8.0.2.nupkg.sha512",
+    "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.components.authorization/8.0.2/microsoft.aspnetcore.components.authorization.8.0.2.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.aspnetcore.metadata/8.0.3/microsoft.aspnetcore.metadata.8.0.3.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/ziadomaish/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
