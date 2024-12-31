@@ -1,0 +1,15 @@
+@page "/account/identity/logout"
+@using Application.DTOs.Request.Account
+@using Application.Extensions
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject NavigationManager NavManager
+@inject AuthenticationStateProvider AuthStateProvider
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvide)AuthStateProvider;
+        await customAuthStateProvider.UpdateAutheticationState(new LocalStorageDto());
+        NavManager.NavigateTo("account/identity/login", true);
+    }
+}
