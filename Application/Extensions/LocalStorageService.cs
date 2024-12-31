@@ -1,9 +1,10 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Application.DTOs.Request.Account;
+using Application.Extentions;
 using NetcodeHub.Packages.Extensions.LocalStorage;
 
-namespace Application.Extentions;
+namespace Application.Extensions;
 
 public class LocalStorageService(ILocalStorageService localStorageService)
 {

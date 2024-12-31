@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace Application.Extensions;
 
-public class CustomHttpHandler(LocalStorageService localStorageService, HttpClientService httpClientService, NavigationManager navigationManager,IAccountService accountService):DelegatingHandler
+public class CustomHttpHandler(LocalStorageService localStorageService, NavigationManager navigationManager,IAccountService accountService):DelegatingHandler
 {
     protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
