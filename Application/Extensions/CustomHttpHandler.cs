@@ -9,7 +9,7 @@ namespace Application.Extensions;
 
 public class CustomHttpHandler(LocalStorageService localStorageService, HttpClientService httpClientService, NavigationManager navigationManager,IAccountService accountService):DelegatingHandler
 {
-    protected async override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
     {
         try
         {
