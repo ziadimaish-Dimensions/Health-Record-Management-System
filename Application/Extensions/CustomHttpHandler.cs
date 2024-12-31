@@ -54,7 +54,7 @@ public class CustomHttpHandler(LocalStorageService localStorageService, HttpClie
                 return null!;
             }
 
-            await localStorageService.RemoveTokeFromBrowserLocalStorage();
+            await localStorageService.RemoveTokenFromBrowserLocalStorage();
             await localStorageService.SetBrowserLocalStorage(new LocalStorageDto(){RefreshToken=response!.RefreshToken,Token=response.Token});
             return response.Token;
         }
@@ -66,5 +66,5 @@ public class CustomHttpHandler(LocalStorageService localStorageService, HttpClie
     
     private void NavigateToLogin()=> navigationManager.NavigateTo(navigationManager.BaseUri,true,true);
     
-    private async Task ClearBrowserStorage()=> await localStorageService.RemoveTokeFromBrowserLocalStorage();
+    private async Task ClearBrowserStorage()=> await localStorageService.RemoveTokenFromBrowserLocalStorage();
 }

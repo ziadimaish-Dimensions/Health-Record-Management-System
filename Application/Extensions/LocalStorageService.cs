@@ -41,7 +41,7 @@ public class LocalStorageService(ILocalStorageService localStorageService)
         }
     }
 
-    public async Task RemoveTokeFromBrowserLocalStorage()
+    public async Task RemoveTokenFromBrowserLocalStorage()
         => await localStorageService.DeleteItemAsync(Constant.BrowserStorageKey);
 
     private static string SerializeObj<T>(T modelObject)

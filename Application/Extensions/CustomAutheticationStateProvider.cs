@@ -35,7 +35,7 @@ public class CustomAuthenticationStateProvide(LocalStorageService localStorageSe
         }
         else
         {
-            await localStorageService.RemoveTokeFromBrowserLocalStorage();
+            await localStorageService.RemoveTokenFromBrowserLocalStorage();
         }
         NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(claimsPrincipal)));
     }
